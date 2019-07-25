@@ -26,7 +26,7 @@ public class SearchInPlazavea implements Task {
                 Enter.theValue(nameProduct).into(PlazaveaHomePage.FIELD_SEARCH),
                 WaitUntil.the(PlazaveaHomePage.CANCEL_BUTTON_POPUP, isPresent()),
                 Click.on(PlazaveaHomePage.CANCEL_BUTTON_POPUP),
-                Enter.theValue(nameProduct).into(PlazaveaHomePage.FIELD_SEARCH),
+                Click.on(PlazaveaHomePage.FIELD_SEARCH),
                 WaitUntil.the(PlazaveaHomePage.SEARCH_BUTTON, isPresent()),
                 Click.on(PlazaveaHomePage.SEARCH_BUTTON)
         );

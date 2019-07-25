@@ -16,4 +16,7 @@ public class PlazaveaHomePage extends PageObject {
             .located(By.className("iconpv-buscar"));
     public static final Target CANCEL_BUTTON_POPUP = Target.the("Cancel button popup")
             .located(By.id("onesignal-popover-cancel-button"));
+    public static final Target SHOPPING_CAR_BUTTON = Target.the("Cancel button popup")
+            .located(By.id("onesignal-popover-cancel-button"));
+
 }
