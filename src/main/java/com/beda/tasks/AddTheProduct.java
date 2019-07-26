@@ -12,6 +12,12 @@ import static net.serenitybdd.screenplay.Tasks.instrumented;
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isPresent;
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
 
+/**
+ * Clase encargada de agregar el producto al carrito, busca el producto entre los resultados obtenidos en la busqueda
+ * y agrega el producto que concuerda con el nombre del producto buscado
+ *
+ * @author Brayan Diaz
+ */
 public class AddTheProduct implements Task {
 
     private String nameProduct;
@@ -25,14 +31,14 @@ public class AddTheProduct implements Task {
         actor.attemptsTo(
                 WaitUntil.the(PlazaveaHomePage.LIST_PORCENT_PRODUCT, isPresent()),
                 Scroll.to(PlazaveaHomePage.LIST_PORCENT_PRODUCT),
-                SelectProduct.withName( PlazaveaHomePage.LABEL_PRODUCT_NAME, PlazaveaHomePage.ADD_BUTTON, nameProduct),
+                SelectProduct.withName(PlazaveaHomePage.LABEL_PRODUCT_NAME, PlazaveaHomePage.ADD_BUTTON, nameProduct),
                 WaitUntil.the(PlazaveaHomePage.BUY_BUTTON_DETAIL, isVisible()),
                 Click.on(PlazaveaHomePage.BUY_BUTTON_DETAIL)
         );
 
     }
 
-    public static AddTheProduct inShoppingCar (String nameProduct) {
+    public static AddTheProduct inShoppingCar(String nameProduct) {
         return instrumented(AddTheProduct.class, nameProduct);
     }
 

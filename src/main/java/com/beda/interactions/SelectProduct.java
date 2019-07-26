@@ -1,17 +1,20 @@
 package com.beda.interactions;
 
-import com.beda.userinterfaces.PlazaveaHomePage;
 import net.serenitybdd.core.pages.WebElementFacade;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Interaction;
-
 import net.serenitybdd.screenplay.targets.Target;
-import org.openqa.selenium.WebElement;
 
 import java.util.List;
 
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
+/**
+ * Interaccion que se encargar de escoger el producto que corresponde al nombre del producto que se
+ * busco anteriormente y selecionarlo para agregarlo al carrito posteriormente.
+ *
+ * @author Brayan Diaz
+ */
 public class SelectProduct implements Interaction {
 
     private Target listNameProduct;

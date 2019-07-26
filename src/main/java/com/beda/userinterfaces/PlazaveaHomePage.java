@@ -5,6 +5,11 @@ import net.thucydides.core.annotations.DefaultUrl;
 import net.thucydides.core.pages.PageObject;
 import org.openqa.selenium.By;
 
+/**
+ * Clase encargada de tener el mapeo de los elementos que usamos en la automatizacion
+ *
+ * @author Brayan Diaz
+ */
 @DefaultUrl("https://www.plazavea.com.pe/")
 public class PlazaveaHomePage extends PageObject {
 

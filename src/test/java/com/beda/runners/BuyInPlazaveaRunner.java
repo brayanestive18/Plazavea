@@ -5,6 +5,11 @@ import cucumber.api.SnippetType;
 import net.serenitybdd.cucumber.CucumberWithSerenity;
 import org.junit.runner.RunWith;
 
+/**
+ * Clase encargada de correr el test
+ *
+ * @author Brayan Diaz
+ */
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
         features = "src/test/resources/com.beda.features/BuyInPlazavea.feature",

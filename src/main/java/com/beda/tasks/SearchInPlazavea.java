@@ -11,6 +11,11 @@ import net.thucydides.core.annotations.Step;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isPresent;
 
+/**
+ * Task que se encarga de buscar el producto en la página web.
+ *
+ * @author Brayan Diaz
+ */
 public class SearchInPlazavea implements Task {
 
     private String nameProduct;
@@ -32,7 +37,7 @@ public class SearchInPlazavea implements Task {
         );
     }
 
-    public static SearchInPlazavea theProduct (String nameProduct) {
+    public static SearchInPlazavea theProduct(String nameProduct) {
         return instrumented(SearchInPlazavea.class, nameProduct);
     }
 

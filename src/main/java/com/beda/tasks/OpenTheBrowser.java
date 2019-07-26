@@ -7,6 +7,10 @@ import net.thucydides.core.pages.PageObject;
 
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
+/**
+ * Clase encargada de abrir el navegador
+ * @author Brayan Diaz
+ */
 public class OpenTheBrowser implements Task {
 
     private PageObject pageObject;
@@ -20,7 +24,7 @@ public class OpenTheBrowser implements Task {
         actor.attemptsTo(Open.browserOn(pageObject));
     }
 
-    public static OpenTheBrowser at (PageObject pageObject) {
+    public static OpenTheBrowser at(PageObject pageObject) {
         return instrumented(OpenTheBrowser.class, pageObject);
     }
 
