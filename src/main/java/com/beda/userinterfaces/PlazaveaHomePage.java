@@ -18,5 +18,15 @@ public class PlazaveaHomePage extends PageObject {
             .located(By.id("onesignal-popover-cancel-button"));
     public static final Target SHOPPING_CAR_BUTTON = Target.the("Cancel button popup")
             .located(By.id("onesignal-popover-cancel-button"));
+    public static final Target LABEL_PRODUCT_NAME = Target.the("Label the product name")
+            .located(By.className("Showcase__name"));
+    public static final Target LIST_SUMMARY_PRODUCT = Target.the("List summary the product")
+            .located(By.className("Showcase__photo"));
+    public static final Target LIST_PORCENT_PRODUCT = Target.the("List summary the product")
+            .located(By.className("Showcase__tags"));
+    public static final Target BUY_BUTTON_DETAIL = Target.the("Add button the product in car")
+            .located(By.xpath("//a[@class='b12-btn-agregar b12-comprar']"));
+    public static final Target LABEL_NAME_DETAIL = Target.the("Label product name in car")
+            .located(By.xpath("//a[@id='product-name29962']"));
 
 }

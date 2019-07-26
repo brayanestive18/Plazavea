@@ -7,9 +7,9 @@ Feature:Validate add product
 
     Given that I enter in website
     When search the <Product>
-    And add the product in shopping car
-    Then I validate that product is in shopping car
+    And add <Product> in shopping car
+    Then I validate that <Product> is in shopping car
 
     Examples:
-      | Product                     |
-      | Televisor LG LED 50" UHD 4k |
+      | Product                                       |
+      | Televisor LG LED 50" UHD 4K Smart TV 50UK6300 |
