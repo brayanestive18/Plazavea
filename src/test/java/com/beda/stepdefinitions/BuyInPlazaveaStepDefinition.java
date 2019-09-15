@@ -43,7 +43,7 @@ public class BuyInPlazaveaStepDefinition {
 
     @And("^add (.*) in shopping car$")
     public void addTheProductInShoppingCar(String nameProduct) {
-        brayan.attemptsTo(AddTheProduct.inShoppingCar(nameProduct));
+        brayan.attemptsTo(AddTheProduct.inShoppingCar());
     }
 
     @Then("^I validate that (.*) is in shopping car$")

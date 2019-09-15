@@ -14,24 +14,16 @@ import org.openqa.selenium.By;
 public class PlazaveaHomePage extends PageObject {
 
     public static final Target FIELD_SEARCH = Target.the("Field for search the product")
-            .located(By.id("tags"));
-    public static final Target ADD_BUTTON = Target.the("Add button the product in shoppping car")
-            .located(By.className("buy-button-normal"));
-    public static final Target SEARCH_BUTTON = Target.the("Search button the product")
-            .located(By.className("iconpv-buscar"));
-    public static final Target CANCEL_BUTTON_POPUP = Target.the("Cancel button popup")
-            .located(By.id("onesignal-popover-cancel-button"));
+            .located(By.className("Search__input"));
     public static final Target SHOPPING_CAR_BUTTON = Target.the("Cancel button popup")
-            .located(By.id("onesignal-popover-cancel-button"));
+            .located(By.className("cart__ico"));
     public static final Target LABEL_PRODUCT_NAME = Target.the("Label the product name")
-            .located(By.className("Showcase__name"));
-    public static final Target LIST_SUMMARY_PRODUCT = Target.the("List summary the product")
-            .located(By.className("Showcase__photo"));
-    public static final Target LIST_PORCENT_PRODUCT = Target.the("List summary the product")
-            .located(By.className("Showcase__tags"));
+            .located(By.xpath("//h6[contains(@class,'ProductCard__name')]"));
     public static final Target BUY_BUTTON_DETAIL = Target.the("Add button the product in car")
-            .located(By.xpath("//a[@class='b12-btn-agregar b12-comprar']"));
+            .located(By.className("ProductCard__buttons"));
     public static final Target LABEL_NAME_DETAIL = Target.the("Label product name in car")
-            .located(By.xpath("//a[@id='product-name29962']"));
+            .located(By.className("minicart__card__name"));
+    public static final Target LABEL_RESULT_SEARCH = Target.the("Label name the result")
+            .located(By.xpath("//div[@class='SuggestionItem__productName']//a"));
 
 }
